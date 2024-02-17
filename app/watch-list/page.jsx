@@ -41,7 +41,7 @@ export default async function WatchList(){
                             <div key={watch.id} className="mb-4 p-4 bg-gray-800 rounded-lg shadow">
                                 <h2 className="text-xl text-white mb-2">{watch.brand} - {watch.name}</h2>
                                 <div className="flex space-x-2">
-                                    <form action="deleteWatch">
+                                    <form action={deleteWatch}>
                                         <input type="hidden" name="id" value={watch.id} />
                                         <button type="submit">
                                             Delete
